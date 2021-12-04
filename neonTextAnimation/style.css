@@ -1,0 +1,94 @@
+:root{
+	--color-blue-shadow: hsl(197, 94%, 67%);
+
+	--color-pink-shadow: hsl(348, 79%, 81%);
+
+	--color-white-shadow: hsl(0, 0%, 100%);
+
+	--color-background: hsl(216, 100%, 5%);
+}
+
+body{
+	background-color : var(--color-background);
+	text-align: center;
+	font-family: 'Corinthia', cursive;;
+	font-size: 10vw;
+	margin: 0px;
+}
+
+.text-animation{
+	width: 100vw;
+	height: 100vh;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+.letter{
+	color:white;
+	white-space: pre;
+	animation-name: animationText;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	animation-delay: calc(0.5s * var(--id));
+
+
+	color : var(--color-pink-shadow);
+		text-shadow: 0 0 10px var(--color-pink-shadow),
+		0 0 20px var(--color-pink-shadow),
+		0 0 40px var(--color-pink-shadow),
+		0 0 80px var(--color-pink-shadow),
+		0 0 120px var(--color-pink-shadow),
+		0 0 200px var(--color-pink-shadow);
+}
+
+@keyframes animationText {
+	0%{
+		color : var(--color-pink-shadow);
+		text-shadow: 0 0 10px var(--color-pink-shadow),
+		0 0 20px var(--color-pink-shadow),
+		0 0 40px var(--color-pink-shadow),
+		0 0 80px var(--color-pink-shadow),
+		0 0 120px var(--color-pink-shadow),
+		0 0 200px var(--color-pink-shadow);
+	}
+	25%{
+		color : var(--color-blue-shadow);
+		text-shadow: 0 0 10px var(--color-blue-shadow),
+		0 0 20px var(--color-blue-shadow),
+		0 0 40px var(--color-blue-shadow),
+		0 0 80px var(--color-blue-shadow),
+		0 0 120px var(--color-blue-shadow),
+		0 0 200px var(--color-blue-shadow);
+	}
+	50%{
+		color : var(--color-white-shadow);
+		text-shadow: 0 0 10px var(--color-white-shadow),
+		0 0 20px var(--color-white-shadow),
+		0 0 40px var(--color-white-shadow),
+		0 0 80px var(--color-white-shadow),
+		0 0 120px var(--color-white-shadow),
+		0 0 200px var(--color-white-shadow);
+	}
+	75%{
+		color : var(--color-blue-shadow);
+		text-shadow: 0 0 10px var(--color-blue-shadow),
+		0 0 20px var(--color-blue-shadow),
+		0 0 40px var(--color-blue-shadow),
+		0 0 80px var(--color-blue-shadow),
+		0 0 120px var(--color-blue-shadow),
+		0 0 200px var(--color-blue-shadow);
+	}
+	100%{
+		color : var(--color-pink-shadow);
+		text-shadow: 0 0 10px var(--color-pink-shadow),
+		0 0 20px var(--color-pink-shadow),
+		0 0 40px var(--color-pink-shadow),
+		0 0 80px var(--color-pink-shadow),
+		0 0 120px var(--color-pink-shadow),
+		0 0 200px var(--color-pink-shadow);
+	}
+}
