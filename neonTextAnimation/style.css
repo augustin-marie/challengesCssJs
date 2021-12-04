@@ -26,7 +26,6 @@ body{
 
 
 .letter{
-	color:white;
 	white-space: pre;
 	animation-name: animationText;
 	animation-duration: 6s;
@@ -36,26 +35,17 @@ body{
 	animation-delay: calc(0.5s * var(--id));
 
 
-	color : var(--color-pink-shadow);
-		text-shadow: 0 0 10px var(--color-pink-shadow),
-		0 0 20px var(--color-pink-shadow),
-		0 0 40px var(--color-pink-shadow),
-		0 0 80px var(--color-pink-shadow),
-		0 0 120px var(--color-pink-shadow),
-		0 0 200px var(--color-pink-shadow);
+	color : var(--color-blue-shadow);
+		text-shadow: 0 0 10px var(--color-blue-shadow),
+		0 0 20px var(--color-blue-shadow),
+		0 0 40px var(--color-blue-shadow),
+		0 0 80px var(--color-blue-shadow),
+		0 0 120px var(--color-blue-shadow),
+		0 0 200px var(--color-blue-shadow);
 }
 
 @keyframes animationText {
 	0%{
-		color : var(--color-pink-shadow);
-		text-shadow: 0 0 10px var(--color-pink-shadow),
-		0 0 20px var(--color-pink-shadow),
-		0 0 40px var(--color-pink-shadow),
-		0 0 80px var(--color-pink-shadow),
-		0 0 120px var(--color-pink-shadow),
-		0 0 200px var(--color-pink-shadow);
-	}
-	25%{
 		color : var(--color-blue-shadow);
 		text-shadow: 0 0 10px var(--color-blue-shadow),
 		0 0 20px var(--color-blue-shadow),
@@ -64,7 +54,17 @@ body{
 		0 0 120px var(--color-blue-shadow),
 		0 0 200px var(--color-blue-shadow);
 	}
-	50%{
+	16.66%{
+		
+		color : var(--color-pink-shadow);
+		text-shadow: 0 0 10px var(--color-pink-shadow),
+		0 0 20px var(--color-pink-shadow),
+		0 0 40px var(--color-pink-shadow),
+		0 0 80px var(--color-pink-shadow),
+		0 0 120px var(--color-pink-shadow),
+		0 0 200px var(--color-pink-shadow);
+	}
+	33.33%{
 		color : var(--color-white-shadow);
 		text-shadow: 0 0 10px var(--color-white-shadow),
 		0 0 20px var(--color-white-shadow),
@@ -73,16 +73,7 @@ body{
 		0 0 120px var(--color-white-shadow),
 		0 0 200px var(--color-white-shadow);
 	}
-	75%{
-		color : var(--color-blue-shadow);
-		text-shadow: 0 0 10px var(--color-blue-shadow),
-		0 0 20px var(--color-blue-shadow),
-		0 0 40px var(--color-blue-shadow),
-		0 0 80px var(--color-blue-shadow),
-		0 0 120px var(--color-blue-shadow),
-		0 0 200px var(--color-blue-shadow);
-	}
-	100%{
+	66.66%{
 		color : var(--color-pink-shadow);
 		text-shadow: 0 0 10px var(--color-pink-shadow),
 		0 0 20px var(--color-pink-shadow),
@@ -90,5 +81,14 @@ body{
 		0 0 80px var(--color-pink-shadow),
 		0 0 120px var(--color-pink-shadow),
 		0 0 200px var(--color-pink-shadow);
+	}
+	83.32%{
+		color : var(--color-blue-shadow);
+		text-shadow: 0 0 10px var(--color-blue-shadow),
+		0 0 20px var(--color-blue-shadow),
+		0 0 40px var(--color-blue-shadow),
+		0 0 80px var(--color-blue-shadow),
+		0 0 120px var(--color-blue-shadow),
+		0 0 200px var(--color-blue-shadow);
 	}
 }
